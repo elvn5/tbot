@@ -1,6 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api');
 const token = '1407013955:AAHg0hrT6w8KkXVhvhDOA3itnWDraFrL3y0'
-process.env.PORT = 8080;
+process.env.PORT = process.env.PORT || 8080;
 const bot = new TelegramBot(token, {polling:true})
 let books = {
   fizika8: 'BQACAgIAAxkBAAEIqSdgDw64qc5gA7vTXmxLDUVoKSUAAfMAAtEJAAJ0bnlINTqtfxgfxhUeBA',
