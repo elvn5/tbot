@@ -33,7 +33,7 @@ bot.onText(/\/start/, (msg) => {
           "keyboard": [["Химия 8 Класс"], ["Химия 9 Класс"],["Химия 10 Класс"], ["Химия 11 Класс"], ["Главное меню"]]
           }
       });
-    console.log(msg.chat.id)  
+  
 });
 
 bot.onText(/^Физика$/, (msg) => {
@@ -42,48 +42,48 @@ bot.onText(/^Физика$/, (msg) => {
         "keyboard": [["Физика 8 Класс"], ["Физика 9 Класс"],["Физика 10 Класс"], ["Физика 11 Класс"], ["Главное меню"]]
         }
     });
-  console.log(msg.chat.id)  
+
 });
 
 bot.onText(/^Химия 8 Класс$/,  (msg) => {
-  console.log(msg.chat.id)
+
   bot.sendDocument(msg.chat.id, books.chemistry8)
 });
 
 
 bot.onText(/^Химия 9 Класс$/,  (msg) => {
-  console.log(msg.chat.id)
+
   bot.sendDocument(msg.chat.id, books.chemistry9)
 });
 
 bot.onText(/^Химия 10 Класс$/,  (msg) => {
-  console.log(msg.chat.id)
+
   bot.sendDocument(msg.chat.id, books.chemistry10)
 });
 
 bot.onText(/^Химия 11 Класс$/,  (msg) => {
-  console.log(msg.chat.id)
+
   bot.sendDocument(msg.chat.id, books.chemistry11)
 });
 
 
 bot.onText(/^Физика 8 Класс$/,  (msg) => {
-  console.log(msg.chat.id)
+
   bot.sendDocument(msg.chat.id, books.fizika8)
 });
 
 bot.onText(/^Физика 9 Класс$/,  (msg) => {
-  console.log(msg.chat.id)
+
   bot.sendDocument(msg.chat.id, books.fizika9)
 });
 
 bot.onText(/^Физика 10 Класс$/,  (msg) => {
-  console.log(msg.chat.id)
+
   bot.sendDocument(msg.chat.id, books.fizika10)
 });
 
 bot.onText(/^Физика 11 Класс$/,  (msg) => {
-  console.log(msg.chat.id)
+
   bot.sendDocument(msg.chat.id, books.fizika11)
 });
 
