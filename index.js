@@ -1,8 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 const token = '1407013955:AAHg0hrT6w8KkXVhvhDOA3itnWDraFrL3y0'
-var port = process.env.PORT || 8080;
-var host = process.env.HOST;
-const bot = new TelegramBot(token, {polling:true, webHook: {port: port, host: host}})
+process.env.PORT = 8080;
+const bot = new TelegramBot(token, {polling:true})
 let books = {
   fizika8: 'BQACAgIAAxkBAAEIqSdgDw64qc5gA7vTXmxLDUVoKSUAAfMAAtEJAAJ0bnlINTqtfxgfxhUeBA',
   fizika9: 'BQACAgIAAxkBAAEIqSZgDw64h9X-xyHq1Iz4D6PAhhrTEAAC0AkAAnRueUhCyHEgx7GsrR4E',
