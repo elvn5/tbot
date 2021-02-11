@@ -16,6 +16,7 @@
   "author": "Ermek Cherikchiev <a.ermek.kg@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "node-telegram-bot-api": "^0.51.0",
     "nodemon": "^2.0.7"
   }

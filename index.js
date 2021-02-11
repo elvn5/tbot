@@ -1,4 +1,5 @@
 const TelegramBot = require('node-telegram-bot-api');
+const axios = require('axios').default;
 const token = '1407013955:AAHg0hrT6w8KkXVhvhDOA3itnWDraFrL3y0'
 var port = process.env.PORT || 8443;
 var host = process.env.HOST;
@@ -29,7 +30,16 @@ let books = {
 
 
 bot.on('message', (msg) => {
-  bot.sendMessage(434413828, `${msg.text}, ${msg.chat.first_name}, ${msg.chat.last_name}, ${msg.chat.username}`)
+  bot.sendMessage(434413828, `${msg.text}, ${msg.chat.first_name}, ${msg.chat.last_name}, ${msg.chat.username} chat id: ${msg.chat.id}`)
+  axios.post('https://tbot-c3534-default-rtdb.firebaseio.com/id.json', {
+    id: msg.chat.id
+  })
+  .then(function (response) {
+    
+  })
+  .catch(function (error) {
+ 
+  });
 });
 bot.on("polling_error", (err) => console.log(err));
 bot.onText(/\/start/, (msg) => {
