@@ -1,6 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios').default;
-const token = '1407013955:AAHg0hrT6w8KkXVhvhDOA3itnWDraFrL3y0'
+const token = 'TOKEN'
 var port = process.env.PORT || 8443;
 var host = process.env.HOST;
 var bot = new TelegramBot(token, {webHook: {port: port, host: host}});
